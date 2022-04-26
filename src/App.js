@@ -3,13 +3,16 @@ import { useState } from 'react'
 import TestReporter from './components/TestReporter/index.jsx'
 function App() {
     const [ activeClass, setActiveClass] = useState('')
-
   return (
     <div >
       <TestReporter 
         activeClass={activeClass} 
         setActiveClass={setActiveClass}
-        config={{ API: 'dasdads', others: '' }}
+        config={{ 
+          API: 'dasdads', 
+          endpoint: '',
+          credentials: {}
+        }}
         /></div>
   );
 }

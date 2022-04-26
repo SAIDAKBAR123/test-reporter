@@ -6,76 +6,76 @@ body, html {
   height: 100%;
 }
 
-.content, .modal {
-  position: absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width: 100%;
-}
-#canvas {
-  border: 1px solid green
-}
-.content {
-  background-color: orange;
-  z-index:100;
-}
+// // .content, .modal {
+// //   position: absolute;
+// //   top:0;
+// //   left:0;
+// //   height:100%;
+// //   width: 100%;
+// // }
+// // #canvas {
+// //   border: 1px solid green
+// // }
+// // .content {
+// //   background-color: orange;
+// //   z-index:100;
+// // }
 
-.modal {
-  z-index:101;
-  background-color: rgba(0, 0, 0, 0.76);
-  visibility: hidden;
-  opacity: 0;
-  color: white;
-	transition: opacity 0.5s, visibility 0s 0.5s;
-}
-.main-class { 
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
+// .modal {
+//   z-index:101;
+//   background-color: rgba(0, 0, 0, 0.76);
+//   visibility: hidden;
+//   opacity: 0;
+//   color: white;
+// 	transition: opacity 0.5s, visibility 0s 0.5s;
+// }
+// .main-class { 
+//   padding: 2rem;
+//   display: flex;
+//   flex-direction: row;
 
-  .parent {
-    justify-content: space-between;
-    background-color: rgb(240, 155, 155);
-    color: black;
-    width: 70%;
-    flex-shrink: 1;
-    height: 80vh;
-    .toolbar_btns {
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
-  .parent img {
-    color: red;
-    height: 600px;
-    width: 100%;
-    object-fit:contain;
-  }
-  .parent-2 {
-    width: 30%;
-    padding: 1rem;
-    background-color: rgb(48, 146, 110);
-    textarea {
-      resize: none;
-      width: 95%;
-      padding: 2%;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid red;
+//   .parent {
+//     justify-content: space-between;
+//     background-color: rgb(240, 155, 155);
+//     color: black;
+//     width: 70%;
+//     flex-shrink: 1;
+//     height: 80vh;
+//     .toolbar_btns {
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+//   }
+//   .parent img {
+//     color: red;
+//     height: 600px;
+//     width: 100%;
+//     object-fit:contain;
+//   }
+//   .parent-2 {
+//     width: 30%;
+//     padding: 1rem;
+//     background-color: rgb(48, 146, 110);
+//     textarea {
+//       resize: none;
+//       width: 95%;
+//       padding: 2%;
+//       outline: none;
+//       border-radius: 5px;
+//       border: 1px solid red;
 
-    }
-    select {
-      width: 100%;
-      padding: 2%;
-      border: 1px solid red;
-      border-radius: 5px;
-    }
-  }
-}
+//     }
+//     select {
+//       width: 100%;
+//       padding: 2%;
+//       border: 1px solid red;
+//       border-radius: 5px;
+//     }
+//   }
+// }
 
-.modal.active {
-  	opacity: 1;
-  	visibility: visible;
-  	transition: opacity 0.5s;
-}
+// .modal.active {
+//   	opacity: 1;
+//   	visibility: visible;
+//   	transition: opacity 0.5s;
+// }

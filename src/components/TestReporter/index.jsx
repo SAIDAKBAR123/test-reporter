@@ -9,8 +9,8 @@ function App() {
 const canvasRef = useRef(null);
 const ctxRef = useRef(null);
 const [isDrawing, setIsDrawing] = useState(false);
-const [lineWidth, setLineWidth] = useState(5);
-const [lineColor, setLineColor] = useState("black");
+const [lineWidth, setLineWidth] = useState(3);
+const [lineColor, setLineColor] = useState("red");
 const [lineOpacity, setLineOpacity] = useState(1);
 
 // Initialization when the component
@@ -50,7 +50,7 @@ function setImage (e ) {
 	const reader = new FileReader();
 	reader.onload = function () {
         base64String = reader.result
-		var img = new Image(700, 720);
+		var img = new Image(1200, 720);
 		img.src = base64String
 		console.log(img.src)
 		const capture = document.getElementById('capture')
@@ -100,16 +100,6 @@ const draw = (e) => {
 return (
 	<div className="App">
 	{/* <h1>UPM TEST LOGS</h1> */}
-	<div className="draw-area" id="capture" style={{ backgroundRepeat: 'no-repeat !important'}}>
-		<canvas
-		onMouseDown={startDrawing}
-		onMouseUp={endDrawing}
-		onMouseMove={draw}
-		ref={canvasRef}
-		width={`1000px`}
-		height={`600px`}
-		/>
-	</div>
 	<Menu
 		setLineColor={setLineColor}
 		setImage={setImage}
@@ -117,6 +107,16 @@ return (
 		setLineOpacity={setLineOpacity}
 		DownloadCanvasAsImage={DownloadCanvasAsImage}
 		/> 
+	<div className="draw-area" id="capture">
+		<canvas
+		onMouseDown={startDrawing}
+		onMouseUp={endDrawing}
+		onMouseMove={draw}
+		ref={canvasRef}
+		width={`1200px`}
+		height={`720px`}
+		/>
+	</div>
 	</div>
 );
 }
