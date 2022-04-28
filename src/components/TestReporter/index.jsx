@@ -3,6 +3,7 @@ import domtoimage from 'dom-to-image';
 
 import { useEffect, useRef, useState } from "react";
 import Menu from "./components/Menu";
+import Sidebar from "./components/Sidebar";
 import "./components/style.css";
 
 function App() {
@@ -113,9 +114,10 @@ return (
 		onMouseUp={endDrawing}
 		onMouseMove={draw}
 		ref={canvasRef}
-		width={`1200px`}
-		height={`720px`}
+		width={`1000px`}
+		height={`650px`}
 		/>
+		<Sidebar></Sidebar>
 	</div>
 	</div>
 );

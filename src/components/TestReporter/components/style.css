@@ -7,7 +7,7 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 background-image: linear-gradient(
 	120deg, #fdfbfb 0%, #ebedee 100%);
 }
@@ -19,19 +19,71 @@ color: #4644f0;
 }
 
 .draw-area {
-width: 1200px;
-height: 700px;
-background-size: contain !important;
-background-repeat: no-repeat !important;
-background-position: center;
-border: 2px solid #808080;
-position: relative;
-background-color: white;
+	display: flex;
+	cursor: cell;
+	width: 1000px;
+	height: 650px;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	border: 2px solid #dbdbdb;
+	background-color: white;
 }
 
+.draw-area-sidebar {
+	padding: 10px 10px;
+	width: 500px !important;
+	border: 2px solid #dbdbdb;
+	height: 630px;
+	background-color: rgb(247, 247, 247);
+	margin-left: 10px;
+}
+.draw-area-sidebar input {
+	width: 360px;
+	padding: 4px 4px;
+	height: 24px;
+	outline: none;
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px;
+	font-size: 14px;
+}
+.draw-area-sidebar select {
+	width: 365px;
+	padding: 4px 4px;
+	height: 34px;
+	outline: none;
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px;
+	font-size: 14px;
+}
+.draw-area-sidebar textarea {
+	width: 355px;
+	padding: 4px 4px;
+	height: 74px;
+	outline: none;
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px;
+	font-size: 14px;
+	resize: none;
+}
+.draw-area-sidebar button {
+	width: 365px;
+	padding: 4px 4px;
+	height: 42px;
+	outline: none;
+	background-color: #44a0f0;
+	color: white;
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px;
+	font-size: 14px;
+	resize: none;
+}
+.labelTop {
+	margin-top: 5px;
+}
 .Menu {
-	width: 800px;
-	height: 50px;
+	width: 95vw;
+	height: 40px;
 	padding: 10px 20px;
 	display: flex;
 	justify-content: space-between;
