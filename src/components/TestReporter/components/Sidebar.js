@@ -1,7 +1,6 @@
 import React from "react";
 import './style.css'
-const Sidebar = ({
-}) => {
+const Sidebar = () => {
 return (
 	<div className="draw-area-sidebar">
         <label htmlFor="asd">Title</label>
